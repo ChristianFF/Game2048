@@ -39,7 +39,12 @@
 
     <color name="lime_50">#f9fbe7</color>
 
+    <color name="lime_200">#e6ee9c</color>
+
+    <color name="lime_500">#cddc39</color>
+
     <color name="lime_700">#afb42b</color>
 
     <color name="lime_900">#827717</color>
+
 </resources>
