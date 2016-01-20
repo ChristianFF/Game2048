@@ -1,36 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                tools:context=".ui.MainActivity">
 
-    <com.ff.Game2048Layout
-        android:id="@+id/id_game2048"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_centerInParent="true"
-        android:background="#ffffff"
-        android:padding="10dp" >
-    </com.ff.Game2048Layout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/layout_appbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/id_game2048"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:background="#EEE4DA"
-        android:orientation="horizontal" >
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:popupTheme="?android:attr/actionBarPopupTheme"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_appbar"
+        android:layout_margin="@dimen/margin_normal">
 
         <TextView
-            android:id="@+id/id_score"
+            android:id="@+id/txt_restart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="4dp"
-            android:text="Score: 0"
-            android:textColor="#EA7821"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/spacing_normal"
+            android:text="@string/string_2048"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_best_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/spacing_normal"
+            android:gravity="center"
+            android:text="@string/best_score"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"/>
+
+        <TextView
+            android:id="@+id/txt_current_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_best_score"
+            android:layout_margin="@dimen/spacing_normal"
+            android:gravity="center"
+            android:text="@string/current_score"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_score"
+        android:background="@drawable/lime_round_rect">
+
+        <com.ff.view.Game2048Layout
+            android:id="@+id/layout_2048"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/spacing_normal">
+        </com.ff.view.Game2048Layout>
+
+    </RelativeLayout>
+
+
 </RelativeLayout>

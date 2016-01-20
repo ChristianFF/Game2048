@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">@color/lime_700</color>
+    <color name="colorPrimaryDark">@color/lime_900</color>
+    <color name="colorAccent">@color/blue_500</color>
+    <color name="colorBackground">@color/lime_50</color>
+
+    <color name="red_500">#e51c23</color>
+
+    <color name="pink_500">#e91e63</color>
+
+    <color name="purple_500">#9c27b0</color>
+
+    <color name="deep_purple_500">#673ab7</color>
+
+    <color name="indigo_500">#3f51b5</color>
+
+    <color name="blue_500">#5677fc</color>
+
+    <color name="light_blue_500">#03a9f4</color>
+
+    <color name="cyan_500">#00bcd4</color>
+
+    <color name="teal_500">#009688</color>
+
+    <color name="green_500">#259b24</color>
+
+    <color name="light_green_500">#8bc34a</color>
+
+    <color name="yellow_500">#ffeb3b</color>
+
+    <color name="amber_500">#ffc107</color>
+
+    <color name="orange_500">#ff9800</color>
+
+    <color name="deep_orange_500">#ff5722</color>
+
+    <color name="brown_500">#795548</color>
+
+    <color name="lime_50">#f9fbe7</color>
+
+    <color name="lime_700">#afb42b</color>
+
+    <color name="lime_900">#827717</color>
 </resources>
