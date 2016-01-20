@@ -15,7 +15,13 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <!--设置窗口背景-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
         <item name="android:windowBackground">@color/colorBackground</item>
+    </style>
+
+    <style name="CollapsingToolbarTitleStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/transparent</item>
     </style>
 
 </resources>

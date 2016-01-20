@@ -5,4 +5,6 @@
     <string name="current_score">CurrentScore:0</string>
     <string name="about">Lovely About</string>
     <string name="share">分享</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="github">My GitHub: https://github.com/ChristianFF</string>
 </resources>

@@ -5,4 +5,7 @@
     <dimen name="round_rect_radius">8dp</dimen>
     <dimen name="spacing_normal">8dp</dimen>
     <dimen name="margin_normal">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="collapse_appbar_height">224dp</dimen>
+    <dimen name="statusbar_height">24dp</dimen>
 </resources>

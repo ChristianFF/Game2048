@@ -2,6 +2,7 @@ package com.ff.ui;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -124,6 +125,8 @@ public class MainActivity extends BaseActivity {
 
                 break;
             case R.id.item_about:
+                Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(intent);
                 break;
         }
 
